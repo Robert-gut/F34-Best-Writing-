@@ -42,3 +42,32 @@ header .login, header .live_chat{
 header .login:hover, header .live_chat:hover{
     color: var(--color_btn_text_hover);
 }
+
+header .login::after{
+  content: '';
+  display: inline-block;
+  background-image: url(../../images/Login.svg);
+  background-repeat: no-repeat;
+  width: 55px;
+  height: 28px;
+  position: relative;
+  top: 5px;
+}
+header .live_chat::after{
+  content: '';
+  display: inline-block;
+  background-image: url(../../images/Chat.svg);
+  background-repeat: no-repeat;
+  width: 55px;
+  height: 28px;
+  position: relative;
+  top: 5px;
+}
+
+header .login:hover::after{
+  background-image: url(../../images/Login2.svg);
+}
+
+header .live_chat:hover::after{
+  background-image: url(../../images/Chat2.svg);
+}

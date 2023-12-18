@@ -22,6 +22,24 @@
   filter: drop-shadow(2px 3.464px 3.5px rgba(155, 182, 190, 0.75))
 }
 
+.baner .block_h1::before{
+  content: '';
+  display: inline-block;
+  width: 0;
+	height: 0;
+	border-top: 35px solid var(--color_btn_send_message_hover); 
+	border-right: 35px solid transparent;
+  position: relative;
+  top: 65px;
+  right: 305.5px;
+}
+
+.baner .block_h1 h1{
+  margin: 0;
+  position: relative;
+  bottom: 25px;
+}
+
 .baner  h3{
   padding: 15px 0px 0px 54px;
   margin: 0px;
