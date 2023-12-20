@@ -9,6 +9,7 @@ header{
 .phone{
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 header span, header a{
@@ -25,8 +26,7 @@ header a{
 }
 
 header .login_and_chat{
-    display: flex;
-    justify-content: space-evenly;
+    margin-bottom: 5px;
 }
 
 header .login, header .live_chat{

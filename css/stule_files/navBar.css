@@ -31,14 +31,65 @@ nav .border_li::after{
   content: '';
   border: 2px solid var(--color_btn_send_message_hover);
   border-radius: 3px;
-  position: relative;
-  left: 9px;
 }
 
 nav ul li a:hover{
     background-color: var(--color_btn_send_message_hover);
     color: var(--color_btn_text_hover);
-    box-shadow: -17px 0px 0px var(--color_btn_send_message_hover),
-    17px 0px 0px var(--color_btn_send_message_hover);
+    box-shadow: -6px 0px 0px var(--color_btn_send_message_hover),
+    6px 0px 0px var(--color_btn_send_message_hover);
     /* z-index: 1; */
+}
+
+@media screen and (min-width: 1400px){
+  nav .border_li::after{
+    position: relative;
+    left: 10px;
+  }
+  nav ul li a:hover{
+    box-shadow: -16px 0px 0px var(--color_btn_send_message_hover),
+                16px 0px 0px var(--color_btn_send_message_hover);
+  }
+}
+
+nav .login_and_chat{
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav .login, nav .live_chat{
+  font-size: 22px;
+  letter-spacing: 1px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--color_btn_text);
+  font-weight: 400;
+  font-family: Roboto_Regular;
+  text-decoration: none;
+}
+
+nav .login{
+  margin-right: 40px;
+}
+
+
+nav .login::after{
+content: '';
+display: inline-block;
+background-image: url(../../images/Login.svg);
+background-repeat: no-repeat;
+width: 55px;
+height: 28px;
+position: relative;
+top: 5px;
+}
+nav .live_chat::after{
+content: '';
+display: inline-block;
+background-image: url(../../images/Chat.svg);
+background-repeat: no-repeat;
+width: 55px;
+height: 28px;
+position: relative;
+top: 5px;
 }
